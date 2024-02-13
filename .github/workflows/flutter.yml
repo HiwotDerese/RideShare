@@ -4,14 +4,13 @@ on:
     branches:
       - master
       - main
-      - demo.homepage
 jobs:
   flutter_test:
     name: Run flutter test and analyze
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: digital_library_mobile
+        working-directory: ridershare_mobile
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v1
@@ -30,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: digital_library_mobile
+        working-directory: rideshare_mobile
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v1
